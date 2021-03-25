@@ -27,8 +27,9 @@ body{
 /* Globales*/
 
 .contenedor{
-   max-width: 120rem;
-   width: 90%;
+   /* max-width: 120rem; */
+   /* width: 90%; */
+   width: min(90%, 120rem);
    margin: 0 auto; 
 }
 
@@ -103,6 +104,9 @@ img{
         align-items: center;
     }
     
+}
+.barra{
+    padding-top: 3rem;
 }
 .logo{
     color: var(--blanco);
@@ -199,3 +203,25 @@ img{
     font-weight: 400;
 
 }
+
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+    
+}
+/* Sobre Nosotros*/
+@media(min-width: 768px){
+ 
+    .sobre-nosotros{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 3rem;
+    }
+}
+
+.sobre-nosotros__texto p{
+    margin:0;
+}
+
+
